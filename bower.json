@@ -1,0 +1,32 @@
+{
+  "name": "test",
+  "private": true,
+  "dependencies": {
+    "magnific-popup": "^1.1.0",
+    "jquery-ui": "*",
+    "imagesloaded": "^4.1.3",
+    "bootstrap": "^4.0.0",
+    "popper.js": "^1.12.9",
+    "typeahead.js": "^0.11.1",
+    "slick-carousel": "^1.7.1",
+    "jplist": "^5.2.0"
+  },
+  "devDependencies": {},
+  "overrides": {
+    "magnific-popup": {
+      "dependencies": {}
+    },
+    "jquery-ui": {
+      "dependencies": {}
+    },
+    "clipboard": {
+      "dependencies": {}
+    },
+    "bootstrap": {
+      "dependencies": {}
+    },
+    "slick-carousel": {
+      "dependencies": {}
+    }
+  }
+}
