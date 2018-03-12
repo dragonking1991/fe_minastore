@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-	padding-bottom: 1px;
+	padding-bottom: 1px; 
 	overflow: hidden;
 	max-width: 1155px;
 }
@@ -545,5 +545,10 @@ section {
 .jplist-last {
 	&:before {
 		content:'\f101';
+	}
+}
+.price {
+	b {
+		text-decoration: line-through;
 	}
 }

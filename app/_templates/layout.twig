@@ -32,48 +32,38 @@
 </head>
 
 <body>
-  <script>
-  window.isIE = false;
-    // detect IE >= 10
-    if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) {
-      window.isIE = true;
-    }
-    window.accessToken = "ce088026e1e29bbe6d48d3bfc719ec89";
-    window.errorNotify = '';
-    window.errorBrowse = '';
+  <!-- HEADER -->
+  {% include 'header.twig' %}
+  <!-------------------->
 
-    </script>
-    <!-- HEADER -->
-    {% include 'header.twig' %}
-    <!-------------------->
+  <!-- MAIN CONTENT -->
+  {% block page %}
+  {% endblock %}
+  <!-------------------->
 
-    <!-- MAIN CONTENT -->
-    {% block page %}
-    {% endblock %}
-    <!-------------------->
-
-    <!-- FOOTER -->
-    {% include 'footer.twig' %}
-    <!-------------------->
+  <!-- FOOTER -->
+  {% include 'footer.twig' %}
+  <!-------------------->
 
 
 
-    <!-- build:js {{assetPath}}/js/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
-    <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
-    <script src="/bower_components/ev-emitter/ev-emitter.js"></script>
-    <script src="/bower_components/imagesloaded/imagesloaded.js"></script>
-    <script src="/bower_components/popper.js/dist/umd/popper.js"></script>
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/typeahead.js/dist/typeahead.bundle.js"></script>
-    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
-    <script src="/bower_components/jplist/dist/js/jplist.core.min.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:js {{assetPath}}/js/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
+  <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
+  <script src="/bower_components/ev-emitter/ev-emitter.js"></script>
+  <script src="/bower_components/imagesloaded/imagesloaded.js"></script>
+  <script src="/bower_components/popper.js/dist/umd/popper.js"></script>
+  <script src="/bower_components/typeahead.js/dist/typeahead.bundle.js"></script>
+  <script src="/bower_components/slick-carousel/slick/slick.js"></script>
+  <script src="/bower_components/jplist/dist/js/jplist.core.min.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
 
 
-    <script src="{{assetPath}}/js/app.js"></script>
+  <script src="{{assetPath}}/js/app.js"></script>
 
-  </body>
-  </html>
+</body>
+</html>
