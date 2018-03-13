@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="/bower_components/jplist/dist/css/jplist.core.min.css" />
   <!-- endbower -->
   <!-- endbuild -->
-  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
 
   <!-- build:css {{assetPath}}/css/app.css -->
   <link rel="stylesheet" href="{{assetPath}}/css/app.css">
@@ -32,18 +32,20 @@
 </head>
 
 <body>
-  <!-- HEADER -->
-  {% include 'header.twig' %}
-  <!-------------------->
+  <div id="wrapper">
+    <!-- HEADER -->
+    {% include 'header.twig' %}
+    <!-------------------->
 
-  <!-- MAIN CONTENT -->
-  {% block page %}
-  {% endblock %}
-  <!-------------------->
+    <!-- MAIN CONTENT -->
+    {% block page %}
+    {% endblock %}
+    <!-------------------->
 
-  <!-- FOOTER -->
-  {% include 'footer.twig' %}
-  <!-------------------->
+    <!-- FOOTER -->
+    {% include 'footer.twig' %}
+    <!-------------------->
+  </div>
 
 
 
@@ -58,7 +60,6 @@
   <script src="/bower_components/typeahead.js/dist/typeahead.bundle.js"></script>
   <script src="/bower_components/slick-carousel/slick/slick.js"></script>
   <script src="/bower_components/jplist/dist/js/jplist.core.min.js"></script>
-  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
