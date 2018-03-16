@@ -7,7 +7,7 @@ export default class Header {
 		isClosed = false;
 
 		trigger.click(function () {
-			hamburger_cross();      
+			hamburger_cross();    
 		});
 
 		function hamburger_cross() {
